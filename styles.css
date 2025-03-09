@@ -1,0 +1,165 @@
+/*shadow effect */
+h1{
+    
+    text-align: center;
+    text-shadow: -3px -3px 5px rgb(0, 174, 255),3px 3px 5px rgb(216, 3, 249)
+   
+    
+
+}
+
+h2{
+    text-align: center;
+    text-shadow: -5px -5px 10px rgb(246, 255, 0),5px 5px 10px rgb(216, 3, 249)
+
+}
+h3{
+    color: white;
+}
+h4{
+    color: white;
+}
+body{
+   
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+body {
+    padding-top: 100px;
+    text-align: center;
+    background: linear-gradient(200deg, #000000, #090226, #3c0344, rgb(1, 1, 1),purple,black);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+/* Star Sprinkle Navbar and Button for Biker Website */
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+body {
+    padding-top: 100px;
+    text-align: center;
+    background: linear-gradient(270deg, #000000, #0a3549, #2a0537, black);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 10s ease infinite;
+}
+
+/* Company Name Styling */
+.company-name {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 1100;
+}
+
+
+
+
+
+/* Glowing Buttons */
+html,
+.btn
+border-radius: 50%;
+button:vertical
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+   
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(100deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.navbar li{
+    float:left;
+    
+}

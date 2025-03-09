@@ -1,0 +1,90 @@
+<h1 class="company-title" style="font-size: 2cm; font-family: ;">RIDERS STUDIO</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
+    <style>
+         <div class="glow-effect"></div>
+   
+
+  
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle, #1a1a1a, #000);
+            text-align: center;
+            overflow: hidden;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(135deg, #222, #111);
+            padding: 15px 0;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.8);
+            border-bottom: 2px solid cyan;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            margin: 0 15px;
+            transition: 0.3s;
+            border-radius: 5px;
+            position: relative;
+        }
+        .navbar a::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            width: 0;
+            height: 3px;
+            background: cyan;
+            transition: 0.3s ease-in-out;
+        }
+        .navbar a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        .navbar a:hover {
+            background: rgba(0, 255, 255, 0.2);
+            box-shadow: 0 0 15px #00ffff, 0 0 50px #00ffff;
+            color: cyan;
+        }
+        .glow-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.1), transparent);
+            pointer-events: none;
+            animation: pulse 5s infinite alternate;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+    </style>
+    
+</head>
+<body>
+   
+<link rel="stylesheet" href="styles.css">
+<body>
+   <a href="https://www.youtube.com/watch?v=-DGTXuArtRw"><button class="glow-on-hover" type="button">RIDE ME!</button></a>
+   <a href="bikes.html"><button class="glow-on-hover" type="button">BIKES</button></a>
+</body>
+</html>
